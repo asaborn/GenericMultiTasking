@@ -1,4 +1,4 @@
-# Run Generic
+# Generic Multi Tasking processor
 # Run Generic B
 
 
