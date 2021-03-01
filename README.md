@@ -1,5 +1,17 @@
-# Generic Multi Tasking processor
-# Run Generic B
+# GenericMultiTaskingExecuter
+
+GenericMultiTaskingExecuter is a framework which allows you to run, in parallel, logical units of work which can be modeled as graph of tasks that contains depedencies between tasks, in the sense that one task is run only after its depended tasks have finished their run.
+
+The uniqueness of this framework is that it can "ride" 
+
+
+
+
+# Prerequisites
+The code is compatible with python 3.7 version.
+
+
+
 
 
 <!--- If you use this project in your work please cite: 
@@ -10,8 +22,6 @@ If you use this project in your work please cite:
 >
 > 3rd International Winter School and Conference on Network Science, 2017.--->
 
-# Requirments
-You will need JRE to run the jar.
 
 # Example
 For a simple execution on a dummy input, cd to stable:
