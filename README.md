@@ -2,9 +2,9 @@
 # Run Generic B
 
 
-<!--- If you use this project in your work please cite:  --->
-<!---  If you use this project in your work please cite: --->
-<!---  > "AAAAA",  
+<!--- If you use this project in your work please cite: 
+If you use this project in your work please cite: 
+> "AAAAA",  
 >
 > Bornstein, Asa and Hendler, Danny and Rubin, Amir,
 >
