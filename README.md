@@ -2,13 +2,13 @@
 # Run Generic B
 
 
-
-If you use this project in your work please cite: 
-> "AAAAA",
+<!--- If you use this project in your work please cite:  --->
+<!---  If you use this project in your work please cite: --->
+<!---  > "AAAAA",  
 >
 > Bornstein, Asa and Hendler, Danny and Rubin, Amir,
 >
-> 3rd International Winter School and Conference on Network Science, 2017.
+> 3rd International Winter School and Conference on Network Science, 2017.--->
 
 # Requirments
 You will need JRE to run the jar.
