@@ -4,51 +4,16 @@ GenericMultiTaskingExecuter is a framework which allows you to define logical un
 
 This definition is implementation independent to which hardware and software architecture will be used for the parallel run of those tasks. As a result, the framwork provides the ability to run those tasks over different parallel computing architectures and also to add more architectures implemenations in the future.
 
-
 ## Currently supported parallel computing architectures
 
-
+Oracle Grid Engine - Distributed computing.
+Slurm Workload Manager - Distributed computing.
+Taskgraph - https://github.com/natcap/taskgraph
 
 ## Tasks grouping 
 
-One of the features of the framework, that it allows to group several tasks together so the will run sequentially  
-
-
-
-
-
-
-
-
-
-
-
-
-Once the graph is defined, the framework aims to run, in parallel, the independent tasks, in order to ensure high throughput for the whole flow. 
-
-
-
-
-
-
-
-
-
-
-Once the tasks and their dependencies are defined, the user 
-
-
-
-
-
-
-
-
-
-can be modeled as a graph of tasks and contain depedencies between tasks, in the sense that one task is run only after its depended tasks have finished their run.
-
-
-
+Each task has a 'group' attribute which defines to which group it belongs to. Usually, gropud tasks are depended of each other and must run in a sequntial mode. 
+Tagging the tasks to a group, in practice, inforces their sequnential run to be executed on one specific hardware core. For example, it parallelism is achived using distributed computing architecture, this will ensure that all grouped tasks will run sequentially on the same computer.   
 
 # Prerequisites
 The code is compatible with python 3.7 version.
