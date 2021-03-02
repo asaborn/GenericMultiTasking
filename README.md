@@ -20,11 +20,8 @@ Each task has a 'group' attribute which defines to which group it belongs to. Us
 The code is compatible with python 3.7 version.
 
 ## Logical unit of work parameters
-
-To run the program, type:  
 ```
-To set the parameters, type:
--N		[number of nodes]
+N		[number of nodes]
 -k		[average degree]
 -maxk		[maximum degree]
 -mut		[mixing parameter for the topology]
