@@ -1,8 +1,51 @@
 # GenericMultiTaskingExecuter
 
-GenericMultiTaskingExecuter is a framework which allows you to run, in parallel, logical units of work which can be modeled as graph of tasks that contains depedencies between tasks, in the sense that one task is run only after its depended tasks have finished their run.
+GenericMultiTaskingExecuter is a framework which allows you to define logical units of work and also dependencies between them, in the sense that depended logical unit must follow the completion of another. This forms a dependencies graph of tasks which determines which of the tasks can run in parallel or sequential mode (if one is dependended of another). 
 
-The uniqueness of this framework is that it can "ride" 
+This definition is implementation independent to which hardware and software architecture will be used for the parallel run of those tasks. As a result, the framwork provides the ability to run those tasks over different parallel computing architectures and also to add more architectures implemenations in the future.
+
+
+## Currently supported parallel computing architectures
+
+
+
+## Tasks grouping 
+
+One of the features of the framework, that it allows to group several tasks together so the will run sequentially  
+
+
+
+
+
+
+
+
+
+
+
+
+Once the graph is defined, the framework aims to run, in parallel, the independent tasks, in order to ensure high throughput for the whole flow. 
+
+
+
+
+
+
+
+
+
+
+Once the tasks and their dependencies are defined, the user 
+
+
+
+
+
+
+
+
+
+can be modeled as a graph of tasks and contain depedencies between tasks, in the sense that one task is run only after its depended tasks have finished their run.
 
 
 
