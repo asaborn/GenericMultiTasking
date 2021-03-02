@@ -20,29 +20,22 @@ Each task has a 'group' attribute which defines to which group it belongs to. Us
 The code is compatible with python 3.7 version.
 
 ## Logical unit of work parameters
-```
-N		[number of nodes]
--k		[average degree]
--maxk		[maximum degree]
--mut		[mixing parameter for the topology]
--muw		[mixing parameter for the weights]
--beta		[exponent for the weight distribution]
--t1		[minus exponent for the degree sequence]
--t2		[minus exponent for the community size distribution]
--minc		[minimum for the community sizes]
--maxc		[maximum for the community sizes]
--on		[number of overlapping nodes]
--om		[number of memberships of the overlapping nodes]
--C		[Average clustering coefficient]
--cnl		[output communities as strings of nodes (input format for NMI evaluation)]
--name		[base name for the output files]. It is used for the network, communities and statistics; files extensions are added automatically:
-	.nsa  - network, represented by space/tab separated arcs
-	.nse  - network, represented by space/tab separated edges
-	{.cnl, .nmc}  - communities, represented by nodes lists '.cnl' if '-cnl' is used, otherwise as a nodes membership in communities '.nmc')
-	.nst  - network statistics
--seed		[file name of the random seed, default: seed.txt]
--a		[{0, 1} yield directed network (1 - arcs) rather than undirected (0 - edges), default: 0 - edges]
 
+Each logical unit of work is basically running an executable with the command line paramaters.
+```
+
+OutputDirectory			[The run outputs will be located at this path]
+CmdLine				[The command line which runs the task in the shell]
+BinariesLocation		[maximum degree]
+Force				[mixing parameter for the topology]
+StdoutFile			[mixing parameter for the weights]
+StderrFile			[exponent for the weight distribution]
+TimeoutInSecs			[minus exponent for the degree sequence]
+GeneratedFiles			[minus exponent for the community size distribution]
+CheckInputFilesBeforeRun	[minimum for the community sizes]
+WorkingDirectoryToBinariesDir	[maximum for the community sizes]
+MaxMemoryUsage			[number of overlapping nodes]
+ExecutionTimeFile		[number of memberships of the overlapping nodes]
 
 ```
 
