@@ -7,7 +7,9 @@ This definition is implementation independent to which hardware and software arc
 ## Currently supported parallel computing architectures
 
 Oracle Grid Engine - Distributed computing
+
 Slurm Workload Manager - Distributed computing
+
 Taskgraph - https://github.com/natcap/taskgraph
 
 ## Tasks grouping 
