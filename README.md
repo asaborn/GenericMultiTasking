@@ -6,14 +6,13 @@ This definition is implementation independent to which hardware and software arc
 
 ## Currently supported parallel computing architectures
 
-Oracle Grid Engine - Distributed computing.
-Slurm Workload Manager - Distributed computing.
+Oracle Grid Engine - Distributed computing
+Slurm Workload Manager - Distributed computing
 Taskgraph - https://github.com/natcap/taskgraph
 
 ## Tasks grouping 
 
-Each task has a 'group' attribute which defines to which group it belongs to. Usually, gropud tasks are depended of each other and must run in a sequntial mode. 
-Tagging the tasks to a group, in practice, inforces their sequnential run to be executed on one specific hardware core. For example, it parallelism is achived using distributed computing architecture, this will ensure that all grouped tasks will run sequentially on the same computer.   
+Each task has a 'group' attribute which defines to which group it belongs to. Usually, grouped tasks are depended of each other and must run in a sequential mode. Tagging the tasks to a group, in practice, enforces their sequential run to be executed on the same hardware core. For example, it parallelism is achieved using distributed computing architecture, this will ensure that all grouped tasks will run sequentially on the same computer under the same job.
 
 # Prerequisites
 The code is compatible with python 3.7 version.
