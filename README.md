@@ -26,23 +26,23 @@ Each logical unit of work is basically running an executable with the command li
 
 OutputDirectory			[The run outputs will be located at this path]
 CmdLine				[The command line which runs the task in the shell]
-BinariesLocation		[maximum degree]
-Force				[mixing parameter for the topology]
-StdoutFile			[mixing parameter for the weights]
-StderrFile			[exponent for the weight distribution]
-TimeoutInSecs			[minus exponent for the degree sequence]
-GeneratedFiles			[minus exponent for the community size distribution]
-CheckInputFilesBeforeRun	[minimum for the community sizes]
-WorkingDirectoryToBinariesDir	[maximum for the community sizes]
-MaxMemoryUsage			[number of overlapping nodes]
-ExecutionTimeFile		[number of memberships of the overlapping nodes]
+BinariesLocation		[The folder of the binary files which run]
+Force				[Force run even though outputs are exist in output directory (outputs will be overwritten]
+StdoutFile			[Path to the stdout file]
+StderrFile			[Path to the stderr file]
+TimeoutInSecs			[Timeout in seconds for the runtime. If exceeds runtime, the logical unit is terminated]
+GeneratedFiles			[Files names of the generated files. Used for the 'Force' flag]
+CheckInputFilesBeforeRun	[Check if input files exists in paths. If not exist, the logical unit won't run]
+WorkingDirectoryToBinariesDir	[Flag which indicates whether the working directory is set to the binaries folder]
+MaxMemoryUsage			[Maximum memory usage. Used in architectures where this should be declared before run]
+ExecutionTimeFile		[Path to the execution time file which stores the total execution time of the logical unit]
 
 ```
 
 
 <!--- If you use this project in your work please cite: 
 If you use this project in your work please cite: 
-> "AAAAA",  
+> "Machine-Learning Based Objective Function Selection for Community Detection ",  
 >
 > Bornstein, Asa and Hendler, Danny and Rubin, Amir,
 >
