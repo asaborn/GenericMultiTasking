@@ -49,7 +49,9 @@ If you use this project in your work please cite:
 > 3rd International Winter School and Conference on Network Science, 2017.--->
 
 
-# Example
+# How to use?
+
+Write a csv file 
 For a simple execution on a dummy input, cd to stable:
 ```sh
 $ cd Stable
