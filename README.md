@@ -62,6 +62,12 @@ An example for running tasks declared in 'activation_params_df_slurm.csv' file i
 $ python3.7 GenericMultiTasking.py slurm activation_params_df_slurm.csv
 ```
 
+If you use this project in your work please cite: 
+> "Machine-Learning Based Objective Function Selection for Community Detection ",  
+>
+> Bornstein, Asa and Hendler, Danny and Rubin, Amir,
+>
+
 
 
 
