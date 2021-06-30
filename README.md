@@ -28,7 +28,7 @@ The code is compatible with python 3.7 version.
 
 ## Logical unit of work parameters
 
-Each logical unit of work is basically running an executable with the command line paramaters.
+Each logical unit of work is basically running an executable with the command line parameters.
 ```
 
 OutputDirectory			[The run outputs will be located at this path]
