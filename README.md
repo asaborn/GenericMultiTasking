@@ -4,6 +4,13 @@ GenericMultiTaskingExecuter is a framework which allows you to define logical un
 
 This definition is implementation independent to which hardware and software architecture will be used for the parallel run of those tasks. As a result, the framework provides the ability to run those tasks over different parallel computing architectures and also to add more architectures implementations in the future.
 
+If you use this project in your work please cite: 
+> "Machine-Learning Based Objective Function Selection for Community Detection ",  
+>
+> Bornstein, Asa and Hendler, Danny and Rubin, Amir,
+>
+
+
 ## Currently supported parallel computing architectures
 
 Oracle Grid Engine - Distributed computing
@@ -62,11 +69,6 @@ An example for running tasks declared in 'activation_params_df_slurm.csv' file i
 $ python3.7 GenericMultiTasking.py slurm activation_params_df_slurm.csv
 ```
 
-If you use this project in your work please cite: 
-> "Machine-Learning Based Objective Function Selection for Community Detection ",  
->
-> Bornstein, Asa and Hendler, Danny and Rubin, Amir,
->
 
 
 
