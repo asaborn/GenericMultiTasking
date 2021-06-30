@@ -46,45 +46,27 @@ If you use this project in your work please cite:
 >
 > Bornstein, Asa and Hendler, Danny and Rubin, Amir,
 >
-> 3rd International Winter School and Conference on Network Science, 2017.--->
-
 
 # How to use?
 
-Write a csv file 
-For a simple execution on a dummy input, cd to stable:
+Write a csv file containing task names, group names and dependencies defined. You must define for each task the parameters described above.
+ 
+The source-code repository contains a sample of this csv file.
+
+For an execution run the following:
+
 ```sh
-$ cd Stable
-```
-and run:
-```sh
-$ java -jar NECTAR.1.0.jar Dummy
-```
-(Same as running:)
-```sh
-$ java -jar NECTAR.1.0.jar ./lib/DummyNet.txt ./DummyOutput
+$ python3.7 GenericMultiTasking.py <parallel computing architecture> <path_to_csv_file>
 ```
 
-# What's in this repo?
+parallel computing architecture parameter can be one of the following: 'taskgraph', 'slurm' or 'sge'
 
-## Stable
-Under 'Stable' you will find the latest version. Note - it does not support threads.
+An example for running tasks declared in 'activation_params_df_slurm.csv' file in Slurm distributed computing mode: 
 
+```sh
+$ python3.7 GenericMultiTasking.py slurm activation_params_df_slurm.csv
+```
 
-## Tools
-
-Under 'Tools' you can find our implementation to the Omega-Index and Average F1 score calculating tool. 
-
-Under 'Tools/ML' you can find the training set used to train the Random Forst used by NECTAR.
-
-## Older versions
-Under 'Versions' you will find old various versions of NECTAR, supporting threads and weighted graphs. 
-
-We will not continue to devolop them.
-
-For instance, under 'V1' you can find two java implemented version to the NECTAR algorithm (one with modularity, one with WOCC).
-
-('V2' is the version similar to 'V1', except that the objective function is chosen by the algorithm.)
 
 
 
