@@ -66,7 +66,7 @@ parallel computing architecture parameter can be one of the following: 'taskgrap
 An example for running tasks declared in 'activation_params_df_slurm.csv' file in Slurm distributed computing mode: 
 
 ```sh
-$ python3.7 GenericMultiTasking.py slurm activation_params_df_slurm.csv
+$ python3.7 GenericMultiTasking.py slurm activation_params.csv
 ```
 
 
