@@ -40,12 +40,7 @@ ExecutionTimeFile		[Path to the execution time file which stores the total execu
 ```
 
 
-<!--- If you use this project in your work please cite: 
-If you use this project in your work please cite: 
-> "Machine-Learning Based Objective Function Selection for Community Detection ",  
->
-> Bornstein, Asa and Hendler, Danny and Rubin, Amir,
->
+
 
 # How to use?
 
