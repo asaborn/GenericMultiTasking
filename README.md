@@ -63,7 +63,7 @@ $ python3.7 GenericMultiTasking.py <parallel computing architecture> <path_to_cs
 
 parallel computing architecture parameter can be one of the following: 'taskgraph', 'slurm' or 'sge'
 
-An example for running tasks declared in 'activation_params_df_slurm.csv' file in Slurm distributed computing mode: 
+An example for running tasks declared in 'activation_params.csv' file in Slurm distributed computing mode: 
 
 ```sh
 $ python3.7 GenericMultiTasking.py slurm activation_params.csv
