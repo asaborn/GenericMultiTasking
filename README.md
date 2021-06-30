@@ -58,7 +58,7 @@ The source-code repository contains a sample of this csv file.
 For an execution run the following:
 
 ```sh
-$ python3.7 GenericMultiTasking.py <parallel computing architecture> <path_to_csv_file>
+$ python3.7 GenericMultiTaskingExecuter.py <parallel computing architecture> <path_to_csv_file>
 ```
 
 parallel computing architecture parameter can be one of the following: 'taskgraph', 'slurm' or 'sge'
@@ -66,7 +66,7 @@ parallel computing architecture parameter can be one of the following: 'taskgrap
 An example for running tasks declared in 'activation_params.csv' file in Slurm distributed computing mode: 
 
 ```sh
-$ python3.7 GenericMultiTasking.py slurm activation_params.csv
+$ python3.7 GenericMultiTaskingExecuter.py slurm activation_params.csv
 ```
 
 
